@@ -204,8 +204,10 @@
 
 <script>
 	export default {
-		head: {
-			title: 'Home'
+		data () {
+			return {
+				//
+			}
 		}
 	}
 </script>
