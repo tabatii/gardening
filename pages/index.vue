@@ -8,7 +8,7 @@
 							<v-col sm="9" lg="7">
 								<div class="text-center">
 									<div class="warning--text text-overline"><span>Welcome</span></div>
-									<h3 class="white--text text-h2 font-weight-thin mb-8">Save Your Time by Using our Gardening Services</h3>
+									<h3 class="white--text text-h3 text-sm-h2 font-weight-thin mb-8">Save Your Time by Using our Gardening Services</h3>
 									<v-btn color="white" rounded outlined x-large @click="$vuetify.goTo(`#about`)">About us</v-btn>
 								</div>
 							</v-col>
@@ -20,11 +20,11 @@
 		<section>
 			<v-container class="pa-0">
 				<v-row justify="center" no-gutters>
-					<v-col xl="6">
+					<v-col lg="9" xl="6">
 						<v-card style="margin-top:-175px">
 							<v-card-text class="body-1 text--primary pa-8">
 								<v-row>
-									<v-col xl="4">
+									<v-col class="order-2 order-sm-1" cols="12" sm="4">
 										<div class="text-center">
 											<div class="mb-2">
 												<v-avatar color="primary" size="64" rounded="circle">
@@ -34,7 +34,7 @@
 											<p class="mb-0">+34 906 944 167</p>
 										</div>
 									</v-col>
-									<v-col xl="4">
+									<v-col class="order-1 order-sm-2" cols="12" sm="4">
 										<div class="text-center">
 											<div class="mb-2">
 												<v-avatar color="primary" size="64" rounded="circle">
@@ -49,7 +49,7 @@
 											</p>
 										</div>
 									</v-col>
-									<v-col xl="4">
+									<v-col class="order-3" cols="12" sm="4">
 										<div class="text-center">
 											<div class="mb-2">
 												<v-avatar color="primary" size="64" rounded="circle">
@@ -70,8 +70,8 @@
 			<div id="about">
 				<v-container>
 					<v-row justify="center" no-gutters>
-						<v-col xl="5">
-							<h2 class="text-h3 text-center font-weight-light mb-8">WHO <span class="primary--text">WE ARE</span></h2>
+						<v-col lg="9" xl="6">
+							<h2 class="text-h4 text-sm-h3 text-center font-weight-light mb-8">WHO <span class="primary--text">WE ARE</span></h2>
 							<p class="text-h6 text-center font-weight-light">
 								The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
 							</p>
@@ -83,7 +83,7 @@
 		<section class="bg">
 			<div id="services">
 				<v-container>
-					<h2 class="text-h3 text-center font-weight-light mb-12">WHAT <span class="primary--text">WE DO</span></h2>
+					<h2 class="text-h4 text-sm-h3 text-center font-weight-light mb-12">WHAT <span class="primary--text">WE DO</span></h2>
 					<v-row justify="center">
 						<v-col cols="12" sm="6" md="3" xl="2">
 							<v-card class="item">
@@ -136,7 +136,7 @@
 		<section>
 			<div id="gallery">
 				<v-container class="px-0" fluid>
-					<h2 class="text-h3 text-center font-weight-light mb-12">OUR <span class="primary--text">WORK</span></h2>
+					<h2 class="text-h4 text-sm-h3 text-center font-weight-light mb-12">OUR <span class="primary--text">WORK</span></h2>
 					<v-row no-gutters>
 						<v-col class="item" cols="12" sm="6" md="3">
 							<v-img class="img" src="/gallery/1.jpg" />
@@ -174,7 +174,7 @@
 		<section class="mb-16">
 			<div id="contact">
 				<v-container>
-					<h2 class="text-h3 text-center font-weight-light mb-12">GET <span class="primary--text">IN TOUCH</span></h2>
+					<h2 class="text-h4 text-sm-h3 text-center font-weight-light mb-12">GET <span class="primary--text">IN TOUCH</span></h2>
 					<v-row justify="center">
 						<v-col cols="12" xl="8">
 							<v-text-field label="NAME" outlined hide-details />
