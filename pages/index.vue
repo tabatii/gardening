@@ -31,13 +31,13 @@
 													<v-icon size="32" dark>mdi-phone</v-icon>
 												</v-btn>
 											</div>
-											<p class="mb-0">+{{ phone }}</p>
+											<p class="mb-0">+{{ $config.phone }}</p>
 										</div>
 									</v-col>
 									<v-col class="order-1 order-sm-2" cols="12" sm="4">
 										<div class="text-center">
 											<div class="mb-2">
-												<v-btn :href="map" target="_blank" color="primary" fab depressed large>
+												<v-btn :href="$config.map" target="_blank" color="primary" fab depressed large>
 													<v-icon size="32" dark>mdi-map-marker</v-icon>
 												</v-btn>
 											</div>
@@ -52,11 +52,11 @@
 									<v-col class="order-3" cols="12" sm="4">
 										<div class="text-center">
 											<div class="mb-2">
-												<v-btn :href="`mailto:${email}`" target="_blank" color="primary" fab depressed large>
+												<v-btn :href="`mailto:${$config.email}`" target="_blank" color="primary" fab depressed large>
 													<v-icon size="32" dark>mdi-email-outline</v-icon>
 												</v-btn>
 											</div>
-											<p class="mb-0">{{ email }}</p>
+											<p class="mb-0">{{ $config.email }}</p>
 										</div>
 									</v-col>
 								</v-row>
@@ -215,14 +215,7 @@
 	export default {
 		computed: {
 			whatsapp () {
-				return `https://api.whatsapp.com/send?phone=${this.phone}`
-			}
-		},
-		data () {
-			return {
-				phone: '34 906 944 167',
-				email: 'example@mail.com',
-				map: 'https://g.page/abrazzasmadrid?share',
+				return `https://api.whatsapp.com/send?phone=${this.$config.phone}`
 			}
 		}
 	}

@@ -1,10 +1,18 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  publicRuntimeConfig: {
+    name: process.env.APP_NAME,
+    dev: process.env.APP_DEV,
+    phone: process.env.COMPANY_PHONE,
+    email: process.env.COMPANY_EMAIL,
+    map: process.env.COMPANY_MAP,
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     //titleTemplate: '%s - NAME',
-    title: 'COMPANY NAME',
+    title: process.env.APP_NAME,
     htmlAttrs: {
       lang: 'en'
     },
@@ -58,6 +66,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
+    '@nuxtjs/dotenv',
     '@nuxtjs/vuetify',
   ],
 
