@@ -1,5 +1,5 @@
 <template>
-	<v-footer color="white" padless>
+	<v-footer color="background" padless>
 		<v-container class="pa-0" fluid>
 			<v-divider></v-divider>
 		</v-container>
